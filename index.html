@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Una pregunta para ti ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc3a0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      padding: 30px 15px;
+    }
+
+    .carta {
+      width: 100%;
+      max-width: 650px;
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 25px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 2;
+      animation: aparecer 1.5s ease;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #e63966;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      color: #ff5c8a;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .corazon-grande {
+      font-size: 60px;
+      animation: latido 1.2s infinite;
+      margin: 15px;
+    }
+
+    @keyframes latido {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    .mensaje {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 25px 0;
+    }
+
+    .mensaje strong {
+      color: #e63966;
+    }
+
+    .pregunta {
+      margin-top: 30px;
+      font-size: 27px;
+      color: #d6336c;
+      font-weight: bold;
+    }
+
+    .botones {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #si {
+      background: #ff477e;
+      color: white;
+      box-shadow: 0 5px 15px rgba(255, 71, 126, 0.4);
+    }
+
+    #si:hover {
+      background: #e63966;
+      transform: scale(1.1);
+    }
+
+    #pensarlo {
+      background: #ffe0e9;
+      color: #d6336c;
+    }
+
+    #pensarlo:hover {
+      transform: scale(1.05);
+    }
+
+    #respuesta {
+      margin-top: 25px;
+      font-size: 20px;
+      color: #e63966;
+      font-weight: bold;
+      min-height: 30px;
+    }
+
+    .corazon {
+      position: fixed;
+      bottom: -50px;
+      font-size: 25px;
+      animation: subir linear forwards;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    @keyframes subir {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .firma {
+      margin-top: 30px;
+      color: #999;
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .carta {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .mensaje {
+        font-size: 17px;
+      }
+
+      .pregunta {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="carta">
+
+    <div class="corazon-grande">❤️</div>
+
+    <h1>Hay algo que quiero decirte...</h1>
+
+    <p class="subtitulo">
+      Y creo que ya no quiero seguir guardándolo 💕
+    </p>
+
+    <div class="mensaje">
+      Desde que llegaste, poco a poco te convertiste en alguien
+      <strong>muy especial para mí.</strong>
+
+      <br><br>
+
+      Me gusta tu forma de ser, tu sonrisa, tu manera de hablar,
+      esos pequeños detalles tuyos que quizás para ti son normales,
+      pero que para mí tienen algo que los hace especiales.
+
+      <br><br>
+
+      No sé exactamente en qué momento pasó, pero empecé a darme cuenta
+      de que hablar contigo hacía mis días un poquito más bonitos.
+      Que verte me sacaba una sonrisa y que, sin buscarlo,
+      <strong>comencé a sentir algo muy lindo por ti.</strong>
+
+      <br><br>
+
+      No quiero prometerte una historia perfecta,
+      porque las historias más bonitas no necesitan ser perfectas.
+      Solo quiero tener la oportunidad de conocerte todavía más,
+      compartir momentos contigo, hacerte reír,
+      estar para ti cuando lo necesites y crear recuerdos juntos. 🌷
+
+      <br><br>
+
+      Tal vez me dé un poquito de nervios decirte todo esto,
+      pero prefiero ser sincero contigo antes que quedarme pensando
+      en qué habría pasado si alguna vez te hubiera contado lo que siento.
+
+      <br><br>
+
+      Porque entre tantas personas que pude conocer,
+      hubo algo en ti que hizo que mis ojos,
+      mi atención y poquito a poquito
+      <strong>mi corazón se quedaran contigo. ❤️</strong>
+    </div>
+
+    <div class="pregunta">
+      Así que quiero preguntarte algo... 🌹
+      <br><br>
+      ¿Me darías la oportunidad de intentar algo bonito contigo? ❤️
+    </div>
+
+    <div class="botones">
+      <button id="si" onclick="respuestaSi()">
+        Sí ❤️
+      </button>
+
+      <button id="pensarlo" onclick="respuestaPensar()">
+        Déjame pensarlo 🥺
+      </button>
+    </div>
+
+    <div id="respuesta"></div>
+
+    <div class="firma">
+      Con mucho cariño, de alguien a quien le gustas más de lo que imaginas 💌
+    </div>
+
+  </div>
+
+  <script>
+
+    function respuestaSi() {
+      document.getElementById("respuesta").innerHTML =
+        "Entonces acabas de hacerme muy feliz ❤️🥹<br>Prometo que intentaré hacer que esta oportunidad valga muchísimo la pena. 🌹";
+
+      lluviaCorazones();
+    }
+
+    function respuestaPensar() {
+      document.getElementById("respuesta").innerHTML =
+        "Está bien ❤️ Tómate el tiempo que necesites. Lo importante para mí era que supieras lo que siento por ti. 🌷";
+    }
+
+    function crearCorazon() {
+      const corazon = document.createElement("div");
+
+      corazon.classList.add("corazon");
+
+      const corazones = ["❤️", "💕", "💗", "💖", "🌹", "💘"];
+
+      corazon.innerHTML =
+        corazones[Math.floor(Math.random() * corazones.length)];
+
+      corazon.style.left =
+        Math.random() * 100 + "vw";
+
+      corazon.style.animationDuration =
+        (Math.random() * 3 + 4) + "s";
+
+      document.body.appendChild(corazon);
+
+      setTimeout(() => {
+        corazon.remove();
+      }, 7000);
+    }
+
+    setInterval(crearCorazon, 700);
+
+    function lluviaCorazones() {
+      for (let i = 0; i < 30; i++) {
+        setTimeout(crearCorazon, i * 100);
+      }
+    }
+
+  </script>
+
+</body>
+</html>
